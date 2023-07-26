@@ -10,3 +10,8 @@ declare global {
     API: IAPI;
   }
 }
+
+declare module '*.css' {
+  const classes: { [key: string]: string };
+  export default classes;
+}
